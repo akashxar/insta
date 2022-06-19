@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('mongodb+srv://neerajgartia21:21102002n@N@cluster0.qtcrp.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false,
 }).then(() => {
-    console.log('Mongoose connected to ' + process.env.MONGO_URI);
+    console.log('Mongoose connected to ' + 'mongodb+srv://neerajgartia21:21102002n@N@cluster0.qtcrp.mongodb.net/?retryWrites=true&w=majority');
 }).catch((err) => {
     console.log('Mongoose connection error: ' + err);
 });
